@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('include/_head.ejs') %>
+    <body>
+        <section class="container">
+            <%- include('include/_title') %>
+            <!-- liste des nourritures -->
+            <div class="list">
+                <% receipts.forEach((el, index)=>{ %>
+                <!-- item-<%= index+1 %> -->
+                <div class="list-item">
+                    <div class="list-item_img">
+                        <img
+                            src="img/<%= el.nom.split(' ')[0].toLowerCase() %>.jpg"
+                            alt="<%= el.nom %>"
+                        />
+                    </div>
+                    <div class="list-item_name">
+                        <p><%= el.nom %></p>
+                    </div>
+                    <div class="list-item_need">
+                        <p><%= el.carotte %>🥕</p>
+                        <p><%= el.oignon %>🧅</p>
+                        <p><%= el.viande %>Kg🥩</p>
+                    </div>
+                    <div class="list-item_button">
+                        <a href="/receipt/<%= el._id %>"
+                            ><button>Savoir plus</button></a
+                        >
+                    </div>
+                    <div class="list-item_button">
+                        <a class="delete" data-delete="<%= el._id %>"
+                            ><button style="background: red">
+                                Supprimer
+                            </button></a
+                        >
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+            <!-- ajouter un repas -->
+            <div class="add">
+                <a href="/add-receipt"
+                    ><button>
+                        Ajouter une recette
+                        <i class="fa fa-plus"></i></button
+                ></a>
+            </div>
+        </section>
+    </body>
+</html>
+<script src="../js/index.js"></script>

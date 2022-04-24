@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: black;
+    font-size: 62.5%;
+    font-family: 'lato',Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

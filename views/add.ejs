@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('include/_head.ejs') %>
+    <body>
+        <section class="container">
+            <%- include('include/_title') %>
+            <!-- form pour ajouter les recettes -->
+            <form action="/api/receipts" method="post">
+                <label for="nom">Nom de la recette</label>
+                <input type="text" name="nom" id="nom" required />
+                <label for="details">Details</label>
+                <textarea
+                    name="details"
+                    id="details"
+                    cols="30"
+                    rows="10"
+                    required
+                ></textarea>
+                <label for="carotte">Quantité de carotte🥕</label>
+                <input type="number" name="carotte" id="carotte" required />
+                <label for="oignon">Quantité d'oignon🧅</label>
+                <input type="number" name="oignon" id="oignon" required />
+                <label for="viande">Quantité de viande🥩</label>
+                <input type="number" name="viande" id="viande" required />
+                <button type="submit">
+                    Valider <i class="fa fa-check"></i>
+                </button>
+            </form>
+        </section>
+    </body>
+</html>

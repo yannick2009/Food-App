@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('include/_head.ejs') %>
+    <body>
+        <section class="container">
+            <%- include('include/_title') %>
+            <!-- carte de plat -->
+            <div class="card">
+                <div class="card-img">
+                    <img
+                        src="../img/<%= receipt.nom.split(' ')[0].toLowerCase() %>.jpg"
+                        alt="<%= receipt.nom %>"
+                    />
+                </div>
+                <div class="card-text">
+                    <h2><%= receipt.nom %></h2>
+                    <p><%= receipt.details %></p>
+                    <h3>ingrédients</h3>
+                    <p style="font-size: 1.5rem">
+                        <%= receipt.carotte %>🥕 <%= receipt.oignon %>🧅 <%=
+                        receipt.viande %>Kg🥩
+                    </p>
+                </div>
+                <div class="card-button">
+                    <a href="/"><button>Revenir au menu</button></a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
