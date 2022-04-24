@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "6262977098a902e37dd13225"
+  },
+  "nom": "Tchep sénégalais",
+  "details": "ce fameux met à base de riz, légumes, viande et poisson, est le plat national du Sénégal. Découvert à Saint Louis dans les années des indépendances, le Tchep a franchi ses frontières nationales pour conquérir toute l’Afrique voire le monde.",
+  "carotte": 2,
+  "oignon": 5,
+  "viande": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626297c098a902e37dd13227"
+  },
+  "nom": "Garba",
+  "details": "Le garba est un plat populaire ivoirien à base de semoule de manioc, appelée attiéké, accompagnée de thon, essentiellement vendu dans de petites échoppes de rue généralement tenues par des hommes haoussa.",
+  "carotte": 0,
+  "oignon": 1,
+  "viande": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62649363a4c0d4e0c78229c2"
+  },
+  "nom": "alloco",
+  "details": "L'alloco, aloco, aloko, ou parfois loco est un plat traditionnel à base de banane plantain très populaire en Afrique de l'Ouest et en Afrique centrale.",
+  "carotte": 0,
+  "oignon": 2,
+  "viande": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "626498e7fe06dca5e8c50501"
+  },
+  "nom": "avocat",
+  "details": "L'avocat est le fruit de l'avocatier, un arbre de la famille des Lauraceae, originaire du Mexique. Il en existe trois grandes variétés. La variété la plus populaire est l'avocat Hass. C'est un fruit qui ne peut mûrir que lorsqu'il est détaché de l'arbre. L'avocat est un fruit très calorique, riche en matières grasses.",
+  "carotte": 1,
+  "oignon": 2,
+  "viande": 1,
+  "__v": 0
+}]
